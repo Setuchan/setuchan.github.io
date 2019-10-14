@@ -127,7 +127,7 @@ if(d.URL==CAST_LIST_URL){
 			castimgurl[proc_ci]=ciusplitstr.split(CAST_IMG_URL)[1];
 			var exe_cnt=0;
 			for(var i=0; i<dci.length; i++){
-				//sleep(500);
+				sleep(1000);
 				if(i!=proc_ci){
 					create_request(CAST_URL+dci[i],i);
 				}
