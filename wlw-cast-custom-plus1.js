@@ -490,11 +490,14 @@ alert("想定外のエラーが発生しました。\n出来れば当メッセ�
 }
 }
 
-}function sleep(waitMsec) {
+}
+
+function sleep(waitMsec) {
   var startMsec = new Date();
  while (new Date() - startMsec < waitMsec);
 
 }
+
 function create_request(url,index){
 try{
 var request=new XMLHttpRequest();
@@ -502,7 +505,7 @@ request.open("GET",url);
 request.onreadystatechange=function(){
 if(request.readyState==4&&request.status==200){
 sorceget(request.responseText,index);
-sleep(500);
+//sleep(500);
 
 }
 };
