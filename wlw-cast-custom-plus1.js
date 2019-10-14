@@ -472,25 +472,25 @@ function sorceget(src_txt,i){
 				savecookie(i,dci[i]);
 			}else{
 				if(err_num==0){
-				err_num=2;
-				err = ur[i] + wc[i] + crc[i] + wdc[i] + tp[i] + wp[i] + lp[i] + tn[i] + wn[i] + ln[i];
-				errmsg="\nキャストID:"+dci[i]+"\nエラー内容:"+e;
-				alert("謎のエラー\n"+errmsg);
-				alert(err);
+					err_num=2;
+					err = ur[i] + wc[i] + crc[i] + wdc[i] + tp[i] + wp[i] + lp[i] + tn[i] + wn[i] + ln[i];
+					errmsg="\nキャストID:"+dci[i]+"\nエラー内容:"+e;
+					console.log("謎のエラー\n"+errmsg);
+					console.log(err);
 
 				}
 			}
 		}
 	}catch(e){
 		if(err_num==0){
-		err_num=9;
-		errmsg="\nキャストID:"+dci[i]+"\nエラー内容:"+e;
+			err_num=9;
+			errmsg="\nキャストID:"+dci[i]+"\nエラー内容:"+e;
 		}
 	}finally{
 		exe_cnt++;
 		if(exe_cnt==dci.length-1){
 			if(err_num==0){
-			disp_proc();
+				disp_proc();
 			}else if(err_num==1){
 				alert("通信エラーが発生しました。\nログアウトされています。\n再度ログインして実行してください。");
 			}else if(err_num==2){
