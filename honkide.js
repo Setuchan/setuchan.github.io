@@ -5,9 +5,10 @@ var alert_info = "このアラートを閉じるとデータ取得を開始し�
 var kousin_info = "ﾅﾝﾃﾞｯ!!\n最新の修正は2016/2/28です。\nマップ別集計実行時、オプション機能のデータ表示と、MP使用量が正しくない不具合を修正しました。\n詳しくはtwitterアカウント「@wlw_honkideya」をご覧ください。";
 
 // 実行するURL
-var starturl1 = "https://wonderland-wars.net/matchlog.html";
+var starturl1 = "https://wonderland-wars.net/matchlog_sub.html";
 var starturl2 = "https://wonderland-wars.net/matchlog.html?type=all";
 var ballurl1 = "https://wonderland-wars.net/matchlog.html?type=bb";
+var asturl1 = "https://wonderland-wars.net/matchlog.html?type=astrology";
 
 // カード名取得用URL
 var cardlist_url = "/card/mycard.json?type=skill&sort=ALLO";
